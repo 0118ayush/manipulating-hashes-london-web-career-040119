@@ -21,7 +21,7 @@ contacts.each {|name, info|
     if label == :favorite_icecream_flavors
       data.shift
     end 
-  end
+}
 
   #remember to return your newly altered contacts hash!
   contacts
