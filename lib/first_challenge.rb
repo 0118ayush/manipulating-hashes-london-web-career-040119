@@ -17,7 +17,7 @@ def first_challenge
 #contacts["Freddy Mercury"][:favorite_icecream_flavors].shift
 
 contacts.each {|name, info|
-  info.each |label, data|
+  info.each {|label, data|
     if label == :favorite_icecream_flavors
       data.shift
     end 
