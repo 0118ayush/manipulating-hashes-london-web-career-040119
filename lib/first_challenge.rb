@@ -14,9 +14,14 @@ def first_challenge
   }
 
   #your code here
-contacts["Freddy Mercury"][:favorite_icecream_flavors].shift
+#contacts["Freddy Mercury"][:favorite_icecream_flavors].shift
 
-contacts
+contacts.each {|name, info|
+  info.each |label, data|
+    if label == :favorite_icecream_flavors
+      data.shift
+    end 
+  end
 
   #remember to return your newly altered contacts hash!
   contacts
