@@ -22,6 +22,7 @@ contacts.each {|name, info|
       data.shift
     end 
 }
+}
 
   #remember to return your newly altered contacts hash!
   contacts
